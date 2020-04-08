@@ -1,0 +1,141 @@
+body {
+  font-family: 'Fredoka One', cursive;
+  background-color: #1f1f1f;
+  height: 100vh;
+}
+
+.neon {
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 0px 0px 9px #0097e8, 0px 0px 15px #00ff00, 0px 0px 5px #00cc00;
+  animation: glow 10s infinite;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.healthbar {
+  width: 80%;
+  height: 40px;
+  background-color: #eee;
+  margin: auto;
+  transition: width 500ms;
+}
+
+.controls, .log {
+  margin-top: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+.log {
+  border: solid #ccc;
+  box-shadow: 0px 0px 9px #00ec0e, 0px 0px 15px #00ec0e, 0px 0px 5px #00cc00;
+  animation: glow-box 10s infinite;
+}
+
+.turn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.log ul {
+  list-style: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.log ul li {
+  margin: 5px;
+}
+
+.log ul .player-turn {
+  color: #fff;
+  text-shadow: 0px 0px 9px #00d800, 0px 0px 15px #00ff00, 0px 0px 5px #00cc00;
+}
+
+.log ul .monster-turn {
+  color: #fff;
+  text-shadow: 0px 0px 9px #eb0000, 0px 0px 15px #eb0000, 0px 0px 5px #00cc00;
+}
+
+button {
+  font-size: 20px;
+  background-color: #fff;
+  padding: 12px;
+  box-shadow: 0 1px 1px black;
+  margin: 10px;
+}
+
+#start-game {
+  color: #00b100;
+}
+
+#start-game:hover {
+  color: #00ec0e;
+  box-shadow: 0px 0px 9px #00ec0e, 0px 0px 15px #00ec0e, 0px 0px 5px #00cc00;
+}
+
+#attack {
+  color: #ff7367;
+}
+
+#attack:hover {
+  color: #ff3d2c;
+  box-shadow: 0px 0px 9px #ff3d2c, 0px 0px 15px #ff3d2c, 0px 0px 5px #ffa4d1;
+}
+
+#special-attack {
+  color: #ffaf4f;
+}
+
+#special-attack:hover {
+  color: #ec8100;
+  box-shadow: 0px 0px 9px #ec8100, 0px 0px 15px #ec8100, 0px 0px 5px #ffa4d1;
+}
+
+#heal {
+  color: #aaffb0;
+}
+
+#heal:hover {
+  color: #34ff43;
+  box-shadow: 0px 0px 9px #34ff43, 0px 0px 15px #34ff43, 0px 0px 5px #ffa4d1;
+}
+
+#give-up {
+  color: #ffef8d;
+}
+
+#give-up:hover {
+  color: #ffe43f;
+  box-shadow: 0px 0px 9px #ffe43f, 0px 0px 15px #ffe43f, 0px 0px 5px #ffa4d1;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0px 0px 9px #00ff00, 0px 0px 15px #f50abe, 0px 0px 5px #f50abe;
+  }
+  50% {
+    text-shadow: 0px 0px 9px #f50abe, 0px 0px 15px #0097e8, 0px 0px 5px #00ff00;
+  }
+  85% {
+    text-shadow: 0px 0px 9px #0097e8, 0px 0px 15px #00ff00, 0px 0px 5px #0097e8;
+  }
+}
+
+@keyframes glow-box {
+  0% {
+    box-shadow: 0px 0px 9px #00ff00, 0px 0px 15px #f50abe, 0px 0px 5px #f50abe;
+  }
+  50% {
+    box-shadow: 0px 0px 9px #f50abe, 0px 0px 15px #0097e8, 0px 0px 5px #00ff00;
+  }
+  85% {
+    box-shadow: 0px 0px 9px #0097e8, 0px 0px 15px #00ff00, 0px 0px 5px #0097e8;
+  }
+}
